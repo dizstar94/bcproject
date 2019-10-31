@@ -46,12 +46,10 @@ class EventDashboard extends Component {
       });
     } else {
       this.setState({
-        moreEvents: false,console.log(boardList)
+        moreEvents: false,
       })
     }
-    console.log("AS")
     const boardList = await this.props.fetchBoard()
-    c
   }
 
   componentWillReceiveProps(nextProps) {

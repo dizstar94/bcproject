@@ -17,10 +17,11 @@ async function _fetchBoard(){
             'CONTENT-TYPE': 'application/json'
         }
     });
+    const data = await resp.json()
 
     return {
         type: FETCH_BOARD,
-        payload: resp.json()
+        payload: data
     }
 }
 
